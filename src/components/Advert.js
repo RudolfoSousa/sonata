@@ -23,6 +23,7 @@ const style = StyleSheet.create({
     paddingRight: 10,
     paddingLeft: 10,
     paddingTop: 15,
+    paddingBottom: 15,
     backgroundColor: '#EBFCFB',
   },
   item: {
