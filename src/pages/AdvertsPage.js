@@ -28,7 +28,9 @@ export default class AdvertsPage extends React.Component {
   render() {
     return (
       <View>
-        <Advert adverts={this.state.adverts}/>
+        <Advert onPress={pageParams => {
+          this.props.navigation.navigate('AdvertDetail', pageParams)
+        }} adverts={this.state.adverts}/>
       </View>
     )
   }

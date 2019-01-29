@@ -2,11 +2,11 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 
 const AdvertItem = props => {
-  const { advert } = props;
+  const { advert, onPress } = props;
   const { title, picture } = advert;
   console.log(picture);
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => onPress({ advert })}>
       <View style={style.line}>
         <Image style={style.avatar} source={{
           uri: picture

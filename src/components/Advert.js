@@ -4,13 +4,14 @@ import AdvertItem from './AdvertItem';
 
 const Advert = props => {
 
-  const { adverts } = props;
+  const { adverts, onPress } = props;
 
   return (
     <FlatList
       data={adverts}
       renderItem={({item}) => (
-        <AdvertItem  advert={item} />
+        <AdvertItem  advert={item}
+        onPress={onPress} />
       )}
       keyExtractor = {(item) => item.id} />
   )

@@ -10,7 +10,13 @@ const AppNavigator = createStackNavigator({
     screen: AdvertsPage
   },
   'AdvertDetail': {
-    screnn: AdvertsDetailPage,
+    screen: AdvertsDetailPage,
+    navigationOptions: ({navigation}) => {
+      const advertName = navigation.state.params.advert.title;
+      return({
+        title: advertName
+      })
+    }
   }
 },{
   defaultNavigationOptions: {
