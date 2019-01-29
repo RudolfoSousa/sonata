@@ -5,7 +5,6 @@ const AdvertItem = props => {
   const { advert, onPress } = props;
   const { title, picture, price } = advert;
   const typePrice = "R$";
-  console.log(picture);
   return (
     <TouchableOpacity onPress={() => onPress({ advert })}>
       <View style={style.item}>

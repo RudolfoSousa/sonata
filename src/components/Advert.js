@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, FlatList } from 'react-native';
+import { StyleSheet, FlatList } from 'react-native';
 import AdvertItem from './AdvertItem';
 
 const Advert = props => {
